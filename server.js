@@ -1,0 +1,15 @@
+
+var http = require('http');
+var RequestListener = require("./RequestListener");
+var requestListener = new RequestListener({
+	"/":"./action/IndexAction",
+	"/callback":"./action/CallbackAction",
+	"/sigout":"./action/SigoutAction"
+});
+
+http.createServer(function (req, res) {
+  requestListener.process( req, res );
+/*  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');*/
+}).listen(8080, "127.0.0.1");
+

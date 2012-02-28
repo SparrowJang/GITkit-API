@@ -1,0 +1,32 @@
+
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jqueryui/1.8.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/googleapis/0.0.4/googleapis.min.js"></script>
+<script type="text/javascript" src="//ajax.googleapis.com/jsapi"></script>
+<script type="text/javascript">
+  google.load("identitytoolkit", "1", {packages: ["ac"], language:"zh-TW"});
+</script>
+<script type="text/javascript">
+  $(function() {
+    window.google.identitytoolkit.setConfig({
+        developerKey: "your developer key",
+        companyName: "",
+        callbackUrl: "http://localhost/callback",
+        realm: "",
+        userStatusUrl: "/userStatus",
+        loginUrl: "/login",
+        signupUrl: "/signup",
+        homeUrl: "/",
+        logoutUrl: "/sigout",
+        //idps: ["Gmail", "Yahoo", "AOL", "Hotmail"],
+        idps: ["Gmail", "Yahoo"],
+        tryFederatedFirst: true,
+        useCachedUserStatus: false
+    });
+    $("#navbar").accountChooser();
+  });
+</script>
+<!-- Insert the navbar element somewhere in the HTML page -->
+<div id="navbar"></div>
+
+
