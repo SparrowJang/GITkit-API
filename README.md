@@ -26,7 +26,7 @@
 </p>
 </p>
 <p>
-4.enter "http://localhost/" for browser
+4.enter "http://localhost/" by browser
 
 </p>
 
