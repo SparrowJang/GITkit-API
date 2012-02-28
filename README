@@ -1,6 +1,8 @@
 
-1.change developerKey:
-	template/index.html
+This is GITkit of simple example.
+
+1.change developerKey
+	file path: template/index.html
 
 2.run server
 	node server.js
@@ -8,3 +10,8 @@
 3.enter "http://localhost/" for browser
 
 
+reference path:
+	http://sparrowhome.twbbs.org/wordpress/?p=473
+
+My blog:
+	http://sparrowhome.twbbs.org/wordpress/
