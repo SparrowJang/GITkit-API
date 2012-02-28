@@ -2,11 +2,6 @@
 <head>
 	<meta charset="UTF-8">
 	<title></title>
-<style>
-	.content {
-		margin-left:30px;
-	}
-</style>
 </head>
 <body>
 
